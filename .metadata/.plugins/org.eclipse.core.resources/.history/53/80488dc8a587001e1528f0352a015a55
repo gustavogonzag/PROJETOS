@@ -1,0 +1,28 @@
+package testeAula;
+
+public class Conversor {
+	private float temperatura;
+
+	public float getTemperatura() {
+		return temperatura;
+	}
+
+	public void setTemperatura(float temperatura) {
+		this.temperatura = temperatura;
+	}
+	
+	public void convertCtoF(float temp) {
+		this.temperatura = (temp * (9 / 5) + 32);
+		System.out.println("Temperatura em F: " + this.temperatura);
+	}
+	
+	public void convertFtoC(float temp) {
+		this.temperatura = ((temp - 32) * 5/9);
+		System.out.println("Temperatura em C: " + this.temperatura);
+	}
+	
+	public static void main (String[] args) {
+		Conversor conv = new Conversor();
+		conv.convertFtoC(72);
+	}
+}

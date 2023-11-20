@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Cliente cliente = new Cliente("Paulo Ricardo", "145236");
+		
+		System.out.println("Digite o nome do cliente");
+		String nome = scanner.nextLine();
+		
+		System.out.println("Digite o CPF do cliente");
+		String cpf = scanner.nextLine();
+		
+	}
+
+}
